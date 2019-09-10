@@ -1,0 +1,12 @@
+language: go
+
+env:
+ - GO111MODULE=on
+
+deploy:
+  provider: releases
+  api_key:
+    secure: mKqQaiU0w971FT53W6a55U62h7vAnJwmiBXIuvtsk3BauEueb0sEh3ba2VLh4hIwESjs1ziTCuA/Bafb+exMyX9j0dv2vmOjpm42PZ2GRyzJvTgNIKNcOj0vH8GUhbzrWpgwVFmbwhBMeVrO8VG+GO8SkerVNm80HE4iJIXmRwhj518h7xHCeKcUh5SZlQk8WZcbZ+v7LlTBERBe6lk9OlKu/E9nWeqI+Meojw1y5IvlIndSg2Xs1YwYpKw3L35Ckus5DKeCHTMmbLJiTHhjvkujj4uVs2a3I6VNGbqfkjw7Vo7rUADAwQdzm6vsZF5LCMgaabcljVxwW7eRkb9fg0aMf3SY3QlmBkjd2vNlqAx7x2V8OeJrNvK/Tb1Xo7KgjqtvLC07Cw/ikN3yF2whG4LgJOxLJN+3tt1ZDnGPGwPNZ3D/27CxZPIZqGxYKlj0l7UCcwwAdE/K0mbJKsnDTm47MFL5Q3FympDeny2R0FXZiODE5V0QhQ7bsV1vBw4M8GECQcbzI9u9MJLA1CuaE9etwslwsuW/sGgnJy7/EyU+QC2ZLAw3ldz5UsQj8emiiTrXMYkgKcJDKWZE7/cIf8DnqKseVCIBW4IZL5RkoCPwhRT1iRwJftER75/QUeVaTJS1kfIVgVHFj0ac1y+9Ot+ib/t92qG+sGSX+K7TKUI=
+  file: caddy
+  on:
+    tags: true
