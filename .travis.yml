@@ -3,6 +3,8 @@ language: go
 env:
  - GO111MODULE=on
 
+script: go build
+
 deploy:
   provider: releases
   api_key:
